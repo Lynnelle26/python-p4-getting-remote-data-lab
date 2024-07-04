@@ -4,8 +4,6 @@ import json
 class GetRequester:
     def __init__(self, url):
         self.url = url
-        if not isinstance(url, str):
-            raise ValueError("URL must be a string")
 
     def get_response_body(self):
         try:
